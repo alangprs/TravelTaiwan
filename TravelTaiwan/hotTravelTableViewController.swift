@@ -35,7 +35,6 @@ class hotTravelTableViewController: UITableViewController {
         Area(areaName: counties[21], areaImage: counties[21], areaUrl: "https://www.taiwan.net.tw/m1.aspx?sNo=0001127")
     ]
     
-    var areaIndexPath:Area!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,12 +45,7 @@ class hotTravelTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print(areas[indexPath.row].areaUrl)
-    }
-    
-    
+ 
     //傳資料到下一頁
     @IBSegueAction func sowWeb(_ coder: NSCoder) -> WebViewController? {
         

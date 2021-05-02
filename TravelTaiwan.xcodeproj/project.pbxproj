@@ -12,7 +12,7 @@
 		4D30D6852639313B0075D3DA /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30D6842639313B0075D3DA /* WebData.swift */; };
 		4D30D6AB263D59DB0075D3DA /* areasmagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30D6AA263D59DB0075D3DA /* areasmagesCollectionViewCell.swift */; };
 		4D30D6AD263D59EB0075D3DA /* areasmagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30D6AC263D59EB0075D3DA /* areasmagesCollectionViewController.swift */; };
-		4D30D6B1263E301E0075D3DA /* BigImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30D6B0263E301E0075D3DA /* BigImageViewController.swift */; };
+		4D30D6B5263E4EB20075D3DA /* aresImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30D6B4263E4EB20075D3DA /* aresImages.swift */; };
 		4D49BA15263868380094E080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49BA14263868380094E080 /* AppDelegate.swift */; };
 		4D49BA17263868380094E080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49BA16263868380094E080 /* SceneDelegate.swift */; };
 		4D49BA1C263868380094E080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D49BA1A263868380094E080 /* Main.storyboard */; };
@@ -28,7 +28,7 @@
 		4D30D6842639313B0075D3DA /* WebData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebData.swift; sourceTree = "<group>"; };
 		4D30D6AA263D59DB0075D3DA /* areasmagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = areasmagesCollectionViewCell.swift; sourceTree = "<group>"; };
 		4D30D6AC263D59EB0075D3DA /* areasmagesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = areasmagesCollectionViewController.swift; sourceTree = "<group>"; };
-		4D30D6B0263E301E0075D3DA /* BigImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageViewController.swift; sourceTree = "<group>"; };
+		4D30D6B4263E4EB20075D3DA /* aresImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aresImages.swift; sourceTree = "<group>"; };
 		4D49BA11263868380094E080 /* TravelTaiwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelTaiwan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D49BA14263868380094E080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D49BA16263868380094E080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +58,7 @@
 				4D49BA2A263875FD0094E080 /* area.swift */,
 				4D30D68026392C540075D3DA /* AreaTableViewCell.swift */,
 				4D30D6AA263D59DB0075D3DA /* areasmagesCollectionViewCell.swift */,
+				4D30D6B4263E4EB20075D3DA /* aresImages.swift */,
 				4D49BA13263868380094E080 /* TravelTaiwan */,
 				4D49BA12263868380094E080 /* Products */,
 			);
@@ -77,7 +78,6 @@
 				4D49BA14263868380094E080 /* AppDelegate.swift */,
 				4D49BA16263868380094E080 /* SceneDelegate.swift */,
 				4D49BA1A263868380094E080 /* Main.storyboard */,
-				4D30D6B0263E301E0075D3DA /* BigImageViewController.swift */,
 				4D30D6AC263D59EB0075D3DA /* areasmagesCollectionViewController.swift */,
 				4D49BA282638688D0094E080 /* hotTravelTableViewController.swift */,
 				4D30D682263930DE0075D3DA /* WebViewController.swift */,
@@ -162,10 +162,10 @@
 				4D30D6AB263D59DB0075D3DA /* areasmagesCollectionViewCell.swift in Sources */,
 				4D30D683263930DE0075D3DA /* WebViewController.swift in Sources */,
 				4D30D6852639313B0075D3DA /* WebData.swift in Sources */,
+				4D30D6B5263E4EB20075D3DA /* aresImages.swift in Sources */,
 				4D30D68126392C540075D3DA /* AreaTableViewCell.swift in Sources */,
 				4D30D6AD263D59EB0075D3DA /* areasmagesCollectionViewController.swift in Sources */,
 				4D49BA17263868380094E080 /* SceneDelegate.swift in Sources */,
-				4D30D6B1263E301E0075D3DA /* BigImageViewController.swift in Sources */,
 				4D49BA2B263875FD0094E080 /* area.swift in Sources */,
 				4D49BA292638688D0094E080 /* hotTravelTableViewController.swift in Sources */,
 			);

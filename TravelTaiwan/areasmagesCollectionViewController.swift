@@ -10,7 +10,7 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class areasmagesCollectionViewController: UICollectionViewController {
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +22,7 @@ class areasmagesCollectionViewController: UICollectionViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    
     /*
     // MARK: - Navigation
 

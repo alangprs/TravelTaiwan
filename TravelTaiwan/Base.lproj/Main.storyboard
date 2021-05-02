@@ -69,7 +69,7 @@
             </objects>
             <point key="canvasLocation" x="1923.1884057971015" y="114.50892857142857"/>
         </scene>
-        <!--Areasmages Collection View Controller-->
+        <!--照片牆-->
         <scene sceneID="Fqi-vM-chl">
             <objects>
                 <collectionViewController id="20O-M8-uoi" customClass="areasmagesCollectionViewController" customModule="TravelTaiwan" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,26 +117,11 @@
                             <outlet property="delegate" destination="20O-M8-uoi" id="u65-6Z-iPE"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="bBk-xw-cPm"/>
+                    <navigationItem key="navigationItem" title="照片牆" id="bBk-xw-cPm"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xo1-p8-Epg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2685.507246376812" y="874.55357142857144"/>
-        </scene>
-        <!--Big Image View Controller-->
-        <scene sceneID="Gch-Zt-jqj">
-            <objects>
-                <viewController id="R31-B2-UqH" customClass="BigImageViewController" customModule="TravelTaiwan" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vka-nU-gfh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="MEi-rh-ymv"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gye-sn-AG8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3622" y="875"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="QOy-aP-MOJ">
@@ -147,7 +132,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfR-QJ-xE1">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -176,11 +161,11 @@
         <!--熱門景點-->
         <scene sceneID="GEG-gz-Kv8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ffG-R2-9mM" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ffG-R2-9mM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="熱門景點" image="mappin.and.ellipse" catalog="system" id="waR-mJ-bmj"/>
                     <toolbarItems/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jsq-W3-F9x">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -198,6 +183,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="D0e-h0-FkP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e1n-Kf-oEu">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
