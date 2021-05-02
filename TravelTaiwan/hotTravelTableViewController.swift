@@ -72,8 +72,7 @@ class hotTravelTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "show", for: indexPath) as? AreaTableViewCell else { return UITableViewCell()}
         let areasCell = areas[indexPath.row]
-        cell.areaCellImage.image = UIImage(named: areasCell.areaImage)
-        cell.areaCellLableTex.text = areasCell.areaName
+        cell.updata(with: areasCell)
         // Configure the cell...
         
         return cell

@@ -16,7 +16,11 @@ class AreaTableViewCell: UITableViewCell {
     //cell文字顯示
     @IBOutlet weak var areaCellLableTex: UILabel!
     
-    
+    //寫 hotTravelTableViewController cell要顯示的資料
+    func updata(with areas:Area){
+        areaCellImage.image = UIImage(named: areas.areaImage)
+        areaCellLableTex.text = areas.areaName
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
