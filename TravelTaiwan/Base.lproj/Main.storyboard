@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -68,6 +69,75 @@
             </objects>
             <point key="canvasLocation" x="1923.1884057971015" y="114.50892857142857"/>
         </scene>
+        <!--Areasmages Collection View Controller-->
+        <scene sceneID="Fqi-vM-chl">
+            <objects>
+                <collectionViewController id="20O-M8-uoi" customClass="areasmagesCollectionViewController" customModule="TravelTaiwan" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="iqN-Ms-KY8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="3" minimumInteritemSpacing="3" id="Qyh-xD-gJp">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="areasmagesCollectionViewController" id="Qtd-04-ufd" customClass="areasmagesCollectionViewCell" customModule="TravelTaiwan" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AnC-7K-ag4">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jdd-pP-XzP">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="jdd-pP-XzP" secondAttribute="height" multiplier="1:1" id="WxI-LF-aYc"/>
+                                                <constraint firstAttribute="width" constant="100" id="ZXc-wo-e2t"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="jdd-pP-XzP" secondAttribute="bottom" id="Ia7-P2-c5j"/>
+                                        <constraint firstAttribute="trailing" secondItem="jdd-pP-XzP" secondAttribute="trailing" id="JA8-C0-Qae"/>
+                                        <constraint firstItem="jdd-pP-XzP" firstAttribute="leading" secondItem="AnC-7K-ag4" secondAttribute="leading" id="OUi-iB-eMQ"/>
+                                        <constraint firstItem="jdd-pP-XzP" firstAttribute="top" secondItem="AnC-7K-ag4" secondAttribute="top" id="wXw-ea-0WX"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="areasImageVIew" destination="jdd-pP-XzP" id="JVg-O8-jiK"/>
+                                    <outlet property="imageWidth" destination="ZXc-wo-e2t" id="fGP-ad-n4L"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="20O-M8-uoi" id="RZs-Jo-s5F"/>
+                            <outlet property="delegate" destination="20O-M8-uoi" id="u65-6Z-iPE"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="bBk-xw-cPm"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xo1-p8-Epg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2685.507246376812" y="874.55357142857144"/>
+        </scene>
+        <!--Big Image View Controller-->
+        <scene sceneID="Gch-Zt-jqj">
+            <objects>
+                <viewController id="R31-B2-UqH" customClass="BigImageViewController" customModule="TravelTaiwan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vka-nU-gfh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MEi-rh-ymv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gye-sn-AG8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3622" y="875"/>
+        </scene>
         <!--Web View Controller-->
         <scene sceneID="QOy-aP-MOJ">
             <objects>
@@ -107,7 +177,7 @@
         <scene sceneID="GEG-gz-Kv8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ffG-R2-9mM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="熱門景點" id="waR-mJ-bmj"/>
+                    <tabBarItem key="tabBarItem" title="熱門景點" image="mappin.and.ellipse" catalog="system" id="waR-mJ-bmj"/>
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jsq-W3-F9x">
@@ -133,14 +203,36 @@
                     </tabBar>
                     <connections>
                         <segue destination="ffG-R2-9mM" kind="relationship" relationship="viewControllers" id="LTA-Cw-H0S"/>
+                        <segue destination="hwz-Qk-fOM" kind="relationship" relationship="viewControllers" id="QNk-YC-Thk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q08-Sf-4de" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="102.89855072463769" y="114.50892857142857"/>
         </scene>
+        <!--照片集-->
+        <scene sceneID="T7Q-3Z-KsW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hwz-Qk-fOM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="照片集" image="photo" catalog="system" id="ccG-Qs-4I7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z9c-bt-4jX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="20O-M8-uoi" kind="relationship" relationship="rootViewController" id="imC-Qe-20t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ay-x8-cES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1773.913043478261" y="874.55357142857144"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
