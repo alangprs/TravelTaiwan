@@ -50,8 +50,8 @@ class hotTravelTableViewController: UITableViewController {
     @IBSegueAction func sowWeb(_ coder: NSCoder) -> WebViewController? {
         
         if let row = tableView.indexPathForSelectedRow?.row{
-            let aresRow = areas[row]
-            return WebViewController(coder: coder,webData: WebData(url: aresRow.areaUrl) )
+//            let aresRow = areas[row]
+            return WebViewController(coder: coder,webData: WebData(url: areas[row].areaUrl) )
         }
         return nil
     }
